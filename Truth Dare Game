@@ -1,0 +1,10 @@
+# Truth or dare game random 
+names = ['Tithy', 'RIya', 'Pallob', 'Shaon', 'Kripa', 'Sarna', 'shoron', 'Zakir', 'Debashish', 'Sabbir', 'Dipto', 'Rajon' ]
+import random
+number = random.randint(0,12)
+
+challange = ['Truth', 'Dare']
+import random
+number_1 = random.randint(0,1)
+
+print('It\'s your turn:',names[number] + ' - ' , challange[number_1])
