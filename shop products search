@@ -1,0 +1,32 @@
+# products name & price data 
+price = {'banana' : " 80 ",
+         'apple' : " 180 ",
+         'orange': " 220 ",
+         'cherries' : "450",
+         'guava' : "90",
+         'lime' : "180",
+         'olive' : "80",
+         'mango' : "320",
+         'kaffir Lime' : "320",
+         'finger Lime' : "225",
+         'watermelon' : "100 "}
+         
+         print("Dear customer, can you buy any product from our store ? If so, enter the name of the product in the search bar : ")
+for name in price :
+    print(name)
+
+# customer   
+name = input()
+if name in price:
+    print('{}\'s price is {}.'.format(name, price[name] + "per-kg" ))
+    print(" If you want to buy then type yes, and if you don't buy then press no ")
+    
+    
+    option = input()
+    if option == "yes":
+        print("buy succesfully")
+    else:
+        print("bye")
+        
+else:
+    print('item not found please try again')
